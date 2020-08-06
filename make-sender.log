@@ -1,0 +1,286 @@
+iris-sender configs/config.dev.yaml
+2020-07-30 06:36:53,490 INFO root [-] bootstraping sender...
+2020-07-30 06:36:53,490 INFO root Changing process name to iris-sender
+2020-07-30 06:36:53,531 WARNING iris.client Initializing iris api client without auth
+2020-07-30 06:36:53,592 INFO iris.role_lookup Loaded lookup modules: user
+2020-07-30 06:36:53,594 INFO iris.role_lookup Loaded lookup modules: mailing_list
+2020-07-30 06:36:53,596 INFO iris.role_lookup Loaded lookup modules: dummy
+2020-07-30 06:36:53,632 INFO iris.sender.quota Using iris application (iris) for sender quota notifications.
+2020-07-30 06:36:53,632 INFO root ZK cluster info not specified. Using master status from config
+2020-07-30 06:36:53,634 INFO iris.coordinator.noncluster I am the master sender
+2020-07-30 06:36:53,635 INFO iris.sender.rpc RPC timeout is set to 20 seconds
+2020-07-30 06:36:53,636 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:36:53,649 INFO root [*] sender bootstrapped
+2020-07-30 06:36:53,649 INFO root --> sender looop started.
+2020-07-30 06:36:53,650 INFO iris.sender.cache refreshing plans
+2020-07-30 06:36:53,651 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:36:53,653 INFO root [-] start send loop...
+2020-07-30 06:36:53,725 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:36:53,803 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:36:54,550 INFO iris.sender.cache refreshing templates
+2020-07-30 06:36:54,601 INFO root [-] start escalate task...
+2020-07-30 06:36:54,603 INFO root [*] 0 new incidents
+2020-07-30 06:36:54,607 INFO root Ran task to prune old audit logs. Waiting 4 hours until next run.
+2020-07-30 06:36:54,608 INFO root [*] 0 new messages
+2020-07-30 06:36:54,608 INFO root [*] escalate task finished
+2020-07-30 06:36:54,608 INFO root [-] start deactivate task...
+2020-07-30 06:36:54,612 INFO root [*] deactivate task finished
+2020-07-30 06:36:54,613 INFO root [-] start send task...
+2020-07-30 06:36:54,615 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:36:54,615 INFO root [*] send task finished
+2020-07-30 06:36:54,615 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:36:54,616 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:36:54,617 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:36:54,617 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:36:54,618 INFO root --> sender loop finished in 1.6183972358703613 seconds - sleeping 58.38160276412964 seconds
+2020-07-30 06:36:54,618 INFO root Sending metrics: aggregations: 0.0009331703186035156, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.0044362545013427734, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.0063877105712890625, oncall_error: 0, poll: 0.0017943382263183594, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 1, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:37:53,003 INFO root --> sender looop started.
+2020-07-30 06:37:53,003 INFO iris.sender.cache refreshing plans
+2020-07-30 06:37:53,026 INFO iris.sender.cache refreshing templates
+2020-07-30 06:37:53,041 INFO root [-] start escalate task...
+2020-07-30 06:37:53,044 INFO root [*] 0 new incidents
+2020-07-30 06:37:53,049 INFO root [*] 0 new messages
+2020-07-30 06:37:53,049 INFO root [*] escalate task finished
+2020-07-30 06:37:53,049 INFO root [-] start deactivate task...
+2020-07-30 06:37:53,062 INFO root [*] deactivate task finished
+2020-07-30 06:37:53,062 INFO root [-] start send task...
+2020-07-30 06:37:53,063 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:37:53,063 INFO root [*] send task finished
+2020-07-30 06:37:53,064 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:37:53,065 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:37:53,065 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:37:53,065 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:37:53,066 INFO root --> sender loop finished in 0.06618165969848633 seconds - sleeping 59.933818340301514 seconds
+2020-07-30 06:37:53,066 INFO root Sending metrics: aggregations: 0.001203775405883789, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.012298107147216797, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.008070230484008789, oncall_error: 0, poll: 0.0012450218200683594, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 59, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:37:53,726 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:37:53,728 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:37:53,807 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:38:53,004 INFO root --> sender looop started.
+2020-07-30 06:38:53,004 INFO iris.sender.cache refreshing plans
+2020-07-30 06:38:53,016 INFO iris.sender.cache refreshing templates
+2020-07-30 06:38:53,027 INFO root [-] start escalate task...
+2020-07-30 06:38:53,029 INFO root [*] 0 new incidents
+2020-07-30 06:38:53,033 INFO root [*] 0 new messages
+2020-07-30 06:38:53,033 INFO root [*] escalate task finished
+2020-07-30 06:38:53,033 INFO root [-] start deactivate task...
+2020-07-30 06:38:53,037 INFO root [*] deactivate task finished
+2020-07-30 06:38:53,038 INFO root [-] start send task...
+2020-07-30 06:38:53,039 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:38:53,039 INFO root [*] send task finished
+2020-07-30 06:38:53,040 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:38:53,041 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:38:53,041 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:38:53,041 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:38:53,042 INFO root --> sender loop finished in 0.042089223861694336 seconds - sleeping 59.957910776138306 seconds
+2020-07-30 06:38:53,042 INFO root Sending metrics: aggregations: 0.0011129379272460938, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.004246711730957031, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.006100893020629883, oncall_error: 0, poll: 0.0012814998626708984, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 119, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:38:53,730 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:38:53,734 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:38:53,809 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:39:53,002 INFO root --> sender looop started.
+2020-07-30 06:39:53,002 INFO iris.sender.cache refreshing plans
+2020-07-30 06:39:53,017 INFO iris.sender.cache refreshing templates
+2020-07-30 06:39:53,033 INFO root [-] start escalate task...
+2020-07-30 06:39:53,034 INFO root [*] 0 new incidents
+2020-07-30 06:39:53,037 INFO root [*] 0 new messages
+2020-07-30 06:39:53,037 INFO root [*] escalate task finished
+2020-07-30 06:39:53,037 INFO root [-] start deactivate task...
+2020-07-30 06:39:53,045 INFO root [*] deactivate task finished
+2020-07-30 06:39:53,045 INFO root [-] start send task...
+2020-07-30 06:39:53,046 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:39:53,046 INFO root [*] send task finished
+2020-07-30 06:39:53,046 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:39:53,049 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:39:53,049 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:39:53,050 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:39:53,050 INFO root --> sender loop finished in 0.0504908561706543 seconds - sleeping 59.949509143829346 seconds
+2020-07-30 06:39:53,050 INFO root Sending metrics: aggregations: 0.0027391910552978516, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.007242918014526367, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.004155635833740234, oncall_error: 0, poll: 0.001283407211303711, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 179, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:39:53,735 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:39:53,739 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:39:53,814 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:40:53,001 INFO root --> sender looop started.
+2020-07-30 06:40:53,002 INFO iris.sender.cache refreshing plans
+2020-07-30 06:40:53,013 INFO iris.sender.cache refreshing templates
+2020-07-30 06:40:53,025 INFO root [-] start escalate task...
+2020-07-30 06:40:53,026 INFO root [*] 0 new incidents
+2020-07-30 06:40:53,029 INFO root [*] 0 new messages
+2020-07-30 06:40:53,029 INFO root [*] escalate task finished
+2020-07-30 06:40:53,029 INFO root [-] start deactivate task...
+2020-07-30 06:40:53,036 INFO root [*] deactivate task finished
+2020-07-30 06:40:53,037 INFO root [-] start send task...
+2020-07-30 06:40:53,038 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:40:53,038 INFO root [*] send task finished
+2020-07-30 06:40:53,039 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:40:53,039 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:40:53,040 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:40:53,040 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:40:53,041 INFO root --> sender loop finished in 0.041374921798706055 seconds - sleeping 59.958625078201294 seconds
+2020-07-30 06:40:53,042 INFO root Sending metrics: aggregations: 0.0009055137634277344, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.007154941558837891, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.0040760040283203125, oncall_error: 0, poll: 0.001508951187133789, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 239, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:40:53,740 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:40:53,744 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:40:53,819 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:41:53,001 INFO root --> sender looop started.
+2020-07-30 06:41:53,001 INFO iris.sender.cache refreshing plans
+2020-07-30 06:41:53,012 INFO iris.sender.cache refreshing templates
+2020-07-30 06:41:53,023 INFO root [-] start escalate task...
+2020-07-30 06:41:53,025 INFO root [*] 0 new incidents
+2020-07-30 06:41:53,028 INFO root [*] 0 new messages
+2020-07-30 06:41:53,029 INFO root [*] escalate task finished
+2020-07-30 06:41:53,029 INFO root [-] start deactivate task...
+2020-07-30 06:41:53,032 INFO root [*] deactivate task finished
+2020-07-30 06:41:53,032 INFO root [-] start send task...
+2020-07-30 06:41:53,033 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:41:53,034 INFO root [*] send task finished
+2020-07-30 06:41:53,036 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:41:53,038 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:41:53,038 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:41:53,039 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:41:53,040 INFO root --> sender loop finished in 0.04006600379943848 seconds - sleeping 59.95993399620056 seconds
+2020-07-30 06:41:53,040 INFO root Sending metrics: aggregations: 0.0011873245239257812, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.0034275054931640625, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.005254030227661133, oncall_error: 0, poll: 0.0011973381042480469, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 299, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:41:53,745 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:41:53,750 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:41:53,824 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:42:53,002 INFO root --> sender looop started.
+2020-07-30 06:42:53,002 INFO iris.sender.cache refreshing plans
+2020-07-30 06:42:53,012 INFO iris.sender.cache refreshing templates
+2020-07-30 06:42:53,023 INFO root [-] start escalate task...
+2020-07-30 06:42:53,024 INFO root [*] 0 new incidents
+2020-07-30 06:42:53,027 INFO root [*] 0 new messages
+2020-07-30 06:42:53,027 INFO root [*] escalate task finished
+2020-07-30 06:42:53,027 INFO root [-] start deactivate task...
+2020-07-30 06:42:53,033 INFO root [*] deactivate task finished
+2020-07-30 06:42:53,033 INFO root [-] start send task...
+2020-07-30 06:42:53,034 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:42:53,034 INFO root [*] send task finished
+2020-07-30 06:42:53,035 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:42:53,039 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:42:53,039 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:42:53,039 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:42:53,040 INFO root --> sender loop finished in 0.0404658317565918 seconds - sleeping 59.95953416824341 seconds
+2020-07-30 06:42:53,040 INFO root Sending metrics: aggregations: 0.0043942928314208984, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.005692005157470703, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.003941774368286133, oncall_error: 0, poll: 0.0010972023010253906, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 359, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:42:53,751 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:42:53,755 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:42:53,828 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:43:53,003 INFO root --> sender looop started.
+2020-07-30 06:43:53,004 INFO iris.sender.cache refreshing plans
+2020-07-30 06:43:53,014 INFO iris.sender.cache refreshing templates
+2020-07-30 06:43:53,024 INFO root [-] start escalate task...
+2020-07-30 06:43:53,025 INFO root [*] 0 new incidents
+2020-07-30 06:43:53,029 INFO root [*] 0 new messages
+2020-07-30 06:43:53,029 INFO root [*] escalate task finished
+2020-07-30 06:43:53,030 INFO root [-] start deactivate task...
+2020-07-30 06:43:53,034 INFO root [*] deactivate task finished
+2020-07-30 06:43:53,034 INFO root [-] start send task...
+2020-07-30 06:43:53,035 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:43:53,036 INFO root [*] send task finished
+2020-07-30 06:43:53,036 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:43:53,038 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:43:53,038 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:43:53,039 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:43:53,040 INFO root --> sender loop finished in 0.040221214294433594 seconds - sleeping 59.959778785705566 seconds
+2020-07-30 06:43:53,040 INFO root Sending metrics: aggregations: 0.002227306365966797, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.004599571228027344, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.005637407302856445, oncall_error: 0, poll: 0.0010976791381835938, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 419, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:43:53,757 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:43:53,760 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:43:53,832 INFO iris.sender.cache refreshed target reprioritization rules: 0
+make: *** [sender] Hangup
+iris-sender configs/config.dev.yaml
+2020-07-30 06:45:02,451 INFO root [-] bootstraping sender...
+2020-07-30 06:45:02,452 INFO root Changing process name to iris-sender
+2020-07-30 06:45:02,491 WARNING iris.client Initializing iris api client without auth
+2020-07-30 06:45:02,534 INFO iris.role_lookup Loaded lookup modules: user
+2020-07-30 06:45:02,535 INFO iris.role_lookup Loaded lookup modules: mailing_list
+2020-07-30 06:45:02,536 INFO iris.role_lookup Loaded lookup modules: dummy
+2020-07-30 06:45:02,569 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:45:02,587 INFO iris.sender.quota Using iris application (iris) for sender quota notifications.
+2020-07-30 06:45:02,588 INFO root ZK cluster info not specified. Using master status from config
+2020-07-30 06:45:02,590 INFO iris.coordinator.noncluster I am the master sender
+2020-07-30 06:45:02,590 INFO iris.sender.rpc RPC timeout is set to 20 seconds
+2020-07-30 06:45:02,592 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:45:02,605 INFO root [*] sender bootstrapped
+2020-07-30 06:45:02,606 INFO root --> sender looop started.
+2020-07-30 06:45:02,606 INFO iris.sender.cache refreshing plans
+2020-07-30 06:45:02,609 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:45:02,611 INFO root [-] start send loop...
+2020-07-30 06:45:02,671 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:45:03,661 INFO iris.sender.cache refreshing templates
+2020-07-30 06:45:03,702 INFO root [-] start escalate task...
+2020-07-30 06:45:03,703 INFO root [*] 0 new incidents
+2020-07-30 06:45:03,706 INFO root Ran task to prune old audit logs. Waiting 4 hours until next run.
+2020-07-30 06:45:03,707 INFO root [*] 0 new messages
+2020-07-30 06:45:03,707 INFO root [*] escalate task finished
+2020-07-30 06:45:03,707 INFO root [-] start deactivate task...
+2020-07-30 06:45:03,713 INFO root [*] deactivate task finished
+2020-07-30 06:45:03,713 INFO root [-] start send task...
+2020-07-30 06:45:03,715 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:45:03,715 INFO root [*] send task finished
+2020-07-30 06:45:03,715 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:45:03,717 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:45:03,718 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:45:03,719 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:45:03,719 INFO root --> sender loop finished in 1.7197380065917969 seconds - sleeping 58.2802619934082 seconds
+2020-07-30 06:45:03,720 INFO root Sending metrics: aggregations: 0.0030999183654785156, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.005826711654663086, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.005362272262573242, oncall_error: 0, poll: 0.0012576580047607422, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 1, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:46:02,004 INFO root --> sender looop started.
+2020-07-30 06:46:02,005 INFO iris.sender.cache refreshing plans
+2020-07-30 06:46:02,015 INFO iris.sender.cache refreshing templates
+2020-07-30 06:46:02,027 INFO root [-] start escalate task...
+2020-07-30 06:46:02,027 INFO root [*] 0 new incidents
+2020-07-30 06:46:02,033 INFO root [*] 0 new messages
+2020-07-30 06:46:02,033 INFO root [*] escalate task finished
+2020-07-30 06:46:02,033 INFO root [-] start deactivate task...
+2020-07-30 06:46:02,036 INFO root [*] deactivate task finished
+2020-07-30 06:46:02,036 INFO root [-] start send task...
+2020-07-30 06:46:02,038 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:46:02,039 INFO root [*] send task finished
+2020-07-30 06:46:02,039 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:46:02,041 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:46:02,042 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:46:02,042 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:46:02,042 INFO root --> sender loop finished in 0.04284834861755371 seconds - sleeping 59.957151651382446 seconds
+2020-07-30 06:46:02,043 INFO root Sending metrics: aggregations: 0.0025184154510498047, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.003323793411254883, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.0060732364654541016, oncall_error: 0, poll: 0.002009868621826172, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 59, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:46:02,577 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:46:02,672 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:46:02,676 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:47:02,005 INFO root --> sender looop started.
+2020-07-30 06:47:02,005 INFO iris.sender.cache refreshing plans
+2020-07-30 06:47:02,017 INFO iris.sender.cache refreshing templates
+2020-07-30 06:47:02,027 INFO root [-] start escalate task...
+2020-07-30 06:47:02,028 INFO root [*] 0 new incidents
+2020-07-30 06:47:02,031 INFO root [*] 0 new messages
+2020-07-30 06:47:02,031 INFO root [*] escalate task finished
+2020-07-30 06:47:02,031 INFO root [-] start deactivate task...
+2020-07-30 06:47:02,036 INFO root [*] deactivate task finished
+2020-07-30 06:47:02,037 INFO root [-] start send task...
+2020-07-30 06:47:02,038 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:47:02,039 INFO root [*] send task finished
+2020-07-30 06:47:02,039 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:47:02,040 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:47:02,040 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:47:02,040 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:47:02,043 INFO root --> sender loop finished in 0.04234719276428223 seconds - sleeping 59.95765280723572 seconds
+2020-07-30 06:47:02,043 INFO root Sending metrics: aggregations: 0.0008616447448730469, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.0051937103271484375, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.0036325454711914062, oncall_error: 0, poll: 0.0018200874328613281, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 119, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:47:02,583 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:47:02,680 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:47:02,683 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:48:02,006 INFO root --> sender looop started.
+2020-07-30 06:48:02,007 INFO iris.sender.cache refreshing plans
+2020-07-30 06:48:02,015 INFO iris.sender.cache refreshing templates
+2020-07-30 06:48:02,028 INFO root [-] start escalate task...
+2020-07-30 06:48:02,029 INFO root [*] 0 new incidents
+2020-07-30 06:48:02,031 INFO root [*] 0 new messages
+2020-07-30 06:48:02,031 INFO root [*] escalate task finished
+2020-07-30 06:48:02,031 INFO root [-] start deactivate task...
+2020-07-30 06:48:02,038 INFO root [*] deactivate task finished
+2020-07-30 06:48:02,039 INFO root [-] start send task...
+2020-07-30 06:48:02,040 INFO root 0 new messages waiting in database - queued: 0
+2020-07-30 06:48:02,041 INFO root [*] send task finished
+2020-07-30 06:48:02,041 INFO root [-] start aggregate task - queued: 0
+2020-07-30 06:48:02,043 INFO root [x] dropped 0 inactive messages from claimed incidents, 0 remain
+2020-07-30 06:48:02,043 INFO root [*] aggregate task finished - queued: 0
+2020-07-30 06:48:02,043 INFO root Workers per mode: call: 200, drop: 200, email: 500, slack: 200, sms: 200
+2020-07-30 06:48:02,044 INFO root --> sender loop finished in 0.04439258575439453 seconds - sleeping 59.955607414245605 seconds
+2020-07-30 06:48:02,045 INFO root Sending metrics: aggregations: 0.001251220703125, api_request_cnt: 0, api_request_timeout_cnt: 0, call_avg: 0, call_cnt: 0, call_fail: 0, call_max: 0, call_min: 0, call_sent: 0, call_total: 0, deactivation: 0.007157087326049805, drop_avg: 0, drop_cnt: 0, drop_fail: 0, drop_max: 0, drop_min: 0, drop_sent: 0, drop_total: 0, email_avg: 0, email_cnt: 0, email_fail: 0, email_max: 0, email_min: 0, email_sent: 0, email_total: 0, hipchat_cnt: 0, hipchat_fail: 0, hipchat_max: 0, hipchat_min: 0, hipchat_sent: 0, hipchat_total: 0, im_avg: 0, im_cnt: 0, im_fail: 0, im_max: 0, im_min: 0, im_sent: 0, im_total: 0, message_ids_being_sent_cnt: 0, message_retry_cnt: 0, message_send_cnt: 0, msg_drop_length_cnt: 0, new_incidents_cnt: 0, new_msg_count: 0, notification_cnt: 0, notifications: 0.0033690929412841797, oncall_error: 0, poll: 0.0018010139465332031, queue: 0, quota_hard_exceed_cnt: 0, quota_soft_exceed_cnt: 0, role_target_lookup_error: 0, rpc_message_pass_fail_cnt: 0, rpc_message_pass_success_cnt: 0, send_queue_call_size: 0, send_queue_drop_size: 0, send_queue_email_size: 0, send_queue_gets_cnt: 0, send_queue_im_size: 0, send_queue_puts_cnt: 0, send_queue_puts_fail_cnt: 0, send_queue_slack_size: 0, send_queue_sms_size: 0, sender_uptime: 179, slack_avg: 0, slack_cnt: 0, slack_fail: 0, slack_max: 0, slack_min: 0, slack_sent: 0, slack_total: 0, slave_message_send_fail_cnt: 0, slave_message_send_success_cnt: 0, sms_avg: 0, sms_cnt: 0, sms_fail: 0, sms_max: 0, sms_min: 0, sms_sent: 0, sms_total: 0, target_not_found: 0, task_failure: 0, workers_respawn_cnt: 0
+2020-07-30 06:48:02,592 INFO iris.sender.cache refreshed target reprioritization rules: 0
+2020-07-30 06:48:02,687 INFO iris.sender.quota Refreshing app quotas
+2020-07-30 06:48:02,690 INFO iris.sender.quota Refreshed app quotas: 
+2020-07-30 06:48:47,072 INFO root Shutting server..
+2020-07-30 06:48:47,072 INFO iris.sender.rpc Stopping RPC server
+2020-07-30 06:48:47,073 INFO root Waiting for sender workers to shut down
