@@ -94,6 +94,7 @@ src/iris/ui/templates/applications.html
 src/iris/ui/templates/base.html
 src/iris/ui/templates/error.html
 src/iris/ui/templates/incident.html
+src/iris/ui/templates/manage.html
 src/iris/ui/templates/incidents.html
 src/iris/ui/templates/login.html
 src/iris/ui/templates/message.html
