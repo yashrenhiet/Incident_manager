@@ -1,4 +1,4 @@
-import falcon
+    import falcon
 from falcon import HTTPNotFound, HTTPFound, HTTPBadRequest
 from falcon.util import uri
 from jinja2 import FileSystemLoader
@@ -179,6 +179,15 @@ class SingleStats(object):
 
 
 class Plans(object):
+    allow_read_no_auth = False
+    frontend_route = True
+
+    def on_get(self, req, resp):
+        resp.content_type = 'text/html'
+        resp.body = jinja2_env.get_template('plans.html').render(request=req)
+
+
+class Manage(object):
     allow_read_no_auth = False
     frontend_route = True
 
@@ -465,6 +474,7 @@ def init(config, app):
     app.add_route('/stats/{application}', AppStats())
     app.add_route('/singlestats/{stat_name}', SingleStats())
     app.add_route('/plans/', Plans())
+    app.add_route('/manage/', Manage())
     app.add_route('/plans/{plan}', Plan())
     app.add_route('/incidents/', Incidents())
     app.add_route('/incidents/{incident}', Incident())
