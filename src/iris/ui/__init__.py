@@ -1,4 +1,4 @@
-    import falcon
+import falcon
 from falcon import HTTPNotFound, HTTPFound, HTTPBadRequest
 from falcon.util import uri
 from jinja2 import FileSystemLoader
