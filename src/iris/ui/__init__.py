@@ -193,7 +193,7 @@ class Manage(object):
 
     def on_get(self, req, resp):
         resp.content_type = 'text/html'
-        resp.body = jinja2_env.get_template('plans.html').render(request=req)
+        resp.body = jinja2_env.get_template('manage.html').render(request=req)
 
 
 class Plan(object):
