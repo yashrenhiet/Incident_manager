@@ -4133,7 +4133,7 @@ class UserTemplateOverrides(object):
         else:
             cursor.close()
             connection.close()
-            raise HTTPBadRequest(f'Invalid sms override setting value: {override_val}')
+            raise HTTPBadRequest('Invalid sms override setting value: {override_val}')
 
         cursor.close()
         connection.close()
@@ -5373,6 +5373,11 @@ def construct_falcon_api(debug, healthcheck_path, allowed_origins, iris_sender_a
 
     api.add_route('/v0/templates/{template_id}', Template())
     api.add_route('/v0/templates', Templates())
+
+    #iris-admin routes
+    api.add_route('/static/{filename}', StaticResource('/static'))
+    api.add_route('/v0/users', UsersList())
+    api.add_route('/v0/users/{username}', User())
 
     api.add_route('/v0/users/{username}', User())
     api.add_route('/v0/users/settings/{username}', UserSettings(supported_timezones))
