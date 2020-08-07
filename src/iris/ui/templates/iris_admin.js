@@ -6,16 +6,16 @@ function get_users(startat, startswith, callback) {
   if (startswith) {
     getload.startswith = startswith;
   }
-  $.get('/api/users', getload, callback);
+  $.get('/v0/users', getload, callback);
 }
 
 function get_user(username, callback) {
-  $.get('/api/users/' + username, callback);
+  $.get('/v0/users/' + username, callback);
 }
 
 function edit_user(username, info, callback) {
   $.ajax({
-        url: '/api/users/' + username,
+        url: '/v0/users/' + username,
         data: JSON.stringify(info),
         method: 'PUT',
         contentType: 'application/json'
@@ -24,7 +24,7 @@ function edit_user(username, info, callback) {
 
 function delete_user(username, callback) {
   $.ajax({
-        url: '/api/users/' + username,
+        url: '/v0/users/' + username,
         data: '{}',
         method: 'DELETE',
         contentType: 'application/json'
@@ -33,7 +33,7 @@ function delete_user(username, callback) {
 
 function create_user(username, callback) {
   $.ajax({
-        url: '/api/users/',
+        url: '/v0/users/',
         data: JSON.stringify({username: username}),
         method: 'POST',
         contentType: 'application/json'

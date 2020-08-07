@@ -32,16 +32,16 @@
 
 <script id="user-lister-template" type="text/x-handlebars-template">
   <ul class="pager">
-
-      <li class="previous"><a href="" data-navigo>&larr; Prev</a></li>
-
+    {{#if prev }}
+      <li class="previous"><a href="{{prev}}" data-navigo>&larr; Prev</a></li>
+    {{else}}
       <li class="previous"><a href="/" class="disabled"  data-navigo>&larr; Prev</a></li>
-
-
-      <li class="next"><a href="" data-navigo>Next &rarr;</a></li>
-
+    {{/if}}
+    {{#if next }}
+      <li class="next"><a href="{{next}}" data-navigo>Next &rarr;</a></li>
+    {{else}}
       <li class="next"><a href="/"  class="disabled"  data-navigo>Next &rarr;</a></li>
-
+    {{/if}}
   </ul>
 </script>
 <div>
