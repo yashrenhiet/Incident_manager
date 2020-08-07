@@ -3,7 +3,7 @@
 <script src="/ui/static/js/jquery.min.js" type="text/javascript"></script>
 <script src="/ui/static/js/handlebars.min.js" type="text/javascript"></script>
 <script src="/ui/static/js/navigo.min.js" type="text/javascript"></script>
-<script src="/ui/templates/iris_admin.js" type="text/javascript"></script>
+
 <link href="/ui/static/css/lumen.min.css" type="text/css" rel="stylesheet">
 <style>
 #wrap {
@@ -32,12 +32,12 @@
 <script id="user-lister-template" type="text/x-handlebars-template">
   <ul class="pager">
 
-      <li class="previous"><a href="{{prev}}" data-navigo>&larr; Prev</a></li>
+      <li class="previous"><a href="{{ prev }}" data-navigo>&larr; Prev</a></li>
 
       <li class="previous"><a href="/" class="disabled"  data-navigo>&larr; Prev</a></li>
 
 
-      <li class="next"><a href="{{next}}" data-navigo>Next &rarr;</a></li>
+      <li class="next"><a href="{{ next }}" data-navigo>Next &rarr;</a></li>
 
       <li class="next"><a href="/"  class="disabled"  data-navigo>Next &rarr;</a></li>
 
@@ -56,9 +56,9 @@
     <tbody>
 
       <tr>
-        <td><a data-navigo href="/user/{{name}}">{{name}}</a></td>
-        <td>{{booltostr active}}</td>
-        <td>{{booltostr admin}}</td>
+        <td><a data-navigo href="/user/{{ name }}">{{name}}</a></td>
+        <td>{{ booltostr active }}</td>
+        <td>{{ booltostr admin }}</td>
       </tr>
       {{/each}}
     </tbody>
@@ -75,16 +75,16 @@
     <tbody>
 
       <tr>
-        <td>{{@key}}</td>
-        <td>{{this}}</td>
+        <td>{{ @key }}</td>
+        <td>{{ this }}</td>
       </tr>
       {{/each}}
     </tbody>
   </table>
-  Admin: <input disabled type="checkbox" id="admin"{{#if info.admin}}checked{{/if}}><br>
-  Active: <input disabled type="checkbox" id="active"{{#if info.active}}checked{{/if}}><br>
+  Admin: <input disabled type="checkbox" id="admin"{{ #if info.admin }}checked{{/if}}><br>
+  Active: <input disabled type="checkbox" id="active"{{ #if info.active }}checked{{/if}}><br>
   <a href="/" class="btn btn-default" data-navigo>Back</a>
-  <a href="/user/{{user}}/edit" class="btn btn-primary" data-navigo>Edit</a>
+  <a href="/user/{{ user }}/edit" class="btn btn-primary" data-navigo>Edit</a>
 </script>
 
 <script id="user-editor-template" type="text/x-handlebars-template">
@@ -97,7 +97,7 @@
         </tr>
       </thead>
       <tbody>
-        {{#each info.contacts}}
+        {{ #each info.contacts }}
         <tr>
           <td>{{@key}}</td>
           <td><input type="text" data-mode="{{@key}}" value="{{this}}"></td>
